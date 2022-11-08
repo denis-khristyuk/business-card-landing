@@ -1,0 +1,32 @@
+{
+  "name": "project_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel .src/index.html --open",
+    "lint:html": "linthtml  ./src/index.html",
+    "lint:css": "stylelint **/*.scss",
+    "lint:js": "eslint ./src",
+    "lint": "concurrently \"npm run lint:html\" \"npm run lint:css\" \"npm run lint:js\"",
+    "build": "rm -rf dist && parcel build ./src/index.html --public-url ./ --no-content-hash",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.2",
+    "concurrently": "^7.4.0",
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "gh-pages": "^4.0.0",
+    "husky": "^8.0.1",
+    "parcel": "^2.7.0",
+    "stylelint": "^14.13.0",
+    "stylelint-config-standard-scss": "^5.0.0"
+  }
+}
