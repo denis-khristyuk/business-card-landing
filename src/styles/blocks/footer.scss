@@ -1,0 +1,29 @@
+.footer {
+  z-index: 2;
+  display: flex;
+}
+
+.logo {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  height: 40px;
+
+  @media (max-width: 679px) {
+    left: 25px;
+    bottom: 30px;
+  }
+}
+
+.terms {
+  color: #393939;
+  font-size: 10px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+
+  @media (max-width: 679px) {
+    left: 25px;
+    bottom: 15px;
+  }
+}

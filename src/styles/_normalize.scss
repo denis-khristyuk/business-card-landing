@@ -1,0 +1,19 @@
+.page {
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: 'cambriab', sans-serif;
+  margin: 0;
+  background-color: #08120c;
+  color: white;
+  background-image: url("../images/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}

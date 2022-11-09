@@ -1,0 +1,145 @@
+.main {
+  max-width: 1260px;
+}
+
+.main_content {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  gap: 42px;
+  align-items: center;
+  animation: bounce 2s ease-in-out 0s 1 normal forwards;
+
+  @media (min-width: 1024px) {
+    right: 15.25em;
+    top: 13.125em;
+  }
+
+  @media (max-width: 1024px) {
+    right: 4%;
+    top: 30%;
+  }
+
+  @media  (max-width: 679px) {
+    padding: 50px 25px;
+    position: static;
+  }
+}
+
+.title {
+  font-size: 9.25em;
+  line-height: 80%;
+  margin-bottom: 21px;
+  text-shadow: 2px 4px 8px #000000;
+  animation: shake 2s 3s infinite normal forwards;
+
+  @media (max-width: 680px) {
+    font-size: 6em;
+  }
+
+  &_description {
+    text-transform: uppercase;
+    line-height: 80%;
+    font-size: 3em;
+    text-shadow: 2px 4px 8px #000000;
+    animation: shake 2s 3s infinite normal forwards;
+
+    @media (max-width: 679px) {
+      font-size: 2em;
+    }
+  }
+}
+
+.promo {
+  &_text {
+    padding: 18px 20px 18px 26px;
+    font-size: 28px;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #f73427;
+    font-family: Arial, sans-serif;
+    letter-spacing: 5px;
+    border: 1px dashed grey;
+    border-radius: 40px 0 0 40px;
+    background: rgba(0, 0, 0, 0.35);;
+
+    @media (max-width: 679px) {
+      font-size: 14px;
+    }
+  }
+
+  &_section {
+    display: flex;
+  }
+}
+
+.copy-promo {
+  font-family: Arial, sans-serif;
+  padding: 1.5em 1.875em 1.5em 1.625em;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  background: none;
+  color: white;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 679px) {
+    font-size: 0.5em;
+  }
+
+  &_section {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border: 1px dashed grey;
+    border-radius: 0 40px 40px 0;
+    background: rgba(0, 0, 0, 0.35);;
+    transition: all .1s ease-in;
+
+    &:hover {
+      background: #6f6264;
+      background-size: 40px;
+      font-size: 18px;
+    }
+  }
+}
+
+.button {
+  text-align: center;
+
+  @media (max-width: 679px) {
+    width: 12em;
+  }
+
+  &_text {
+    background-color: #f73427;
+    border-radius: 40px;
+    padding: 20px 100px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 56px;
+    transition: all .2s ease-in;
+
+    &:hover {
+      background: #c00000;
+      font-size: 16px;
+    }
+
+    @media (max-width: 679px) {
+      padding: 15px 50px;
+      line-height: 40px;
+    }
+  }
+}

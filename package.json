@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel .src/index.html --open",
+    "start": "parcel src/index.html --open",
     "lint:html": "linthtml  ./src/index.html",
     "lint:css": "stylelint **/*.scss",
     "lint:js": "eslint ./src",
@@ -19,6 +19,7 @@
   "license": "ISC",
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.2",
+    "@parcel/transformer-sass": "^2.7.0",
     "concurrently": "^7.4.0",
     "eslint": "^8.24.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -28,5 +29,8 @@
     "parcel": "^2.7.0",
     "stylelint": "^14.13.0",
     "stylelint-config-standard-scss": "^5.0.0"
+  },
+  "dependencies": {
+    "parallax-js": "^3.1.0"
   }
 }
