@@ -26,7 +26,7 @@
     "eslint-plugin-import": "^2.26.0",
     "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
-    "parcel": "^2.7.0",
+    "parcel": "^1.12.3",
     "stylelint": "^14.13.0",
     "stylelint-config-standard-scss": "^5.0.0"
   },
