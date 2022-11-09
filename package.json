@@ -1,6 +1,7 @@
 {
   "name": "project_template",
   "version": "1.0.0",
+  "homepage": "https://denis-khristyuk.github.io/business-card-landing",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
